@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddPostActivity"
+    android:weightSum="6"
+    >
+
+    <EditText
+        android:id="@+id/add_post_title_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:ems="10"
+        android:layout_margin="16dp"
+        android:inputType="textPersonName"
+        android:hint="Post title:" />
+
+    <EditText
+        android:id="@+id/add_post_text_et"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:layout_weight="5"
+        android:inputType="textMultiLine"
+        android:layout_margin="16dp"
+        android:hint="Post body"
+        />
+
+    <Button
+        android:id="@+id/add_post_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:layout_margin="16dp"
+        android:text="add post" />
+</LinearLayout>
